@@ -1,9 +1,9 @@
 'use client';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
-// import { faArrowUp } from "@fortawesome/free-regular-svg-icons";
-{/* <FontAwesomeIcon icon={faArrowUp} /> */}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
+
 interface User {
   id: number;
   name: string;
@@ -34,6 +34,15 @@ export default function Home() {
     setUsers(sortedUsers)
   }
 
+  const SortIcons = () => {
+    return (
+      <>
+      {currentSorted === 'asc' && <FontAwesomeIcon icon={faSortUp} />}
+      {currentSorted === 'desc' && <FontAwesomeIcon icon={faSortDown} />}
+    </>
+    )
+  }
+
   return (
     <div className="p-8 max-w-5xl mx-auto">
       <h1 className="text-2xl font-bold mb-6">User List</h1>
@@ -44,7 +53,7 @@ export default function Home() {
               <th className="text-left p-3 border-b">ID</th>
               <th className="text-left p-3 border-b">Name</th>
               <th className="text-left p-3 border-b">Email</th>
-              <th className="text-left p-3 border-b cursor-pointer" onClick={() => sort()}>Birthday</th>
+              <th className="text-left p-3 border-b cursor-pointer" onClick={() => sort()}>{SortIcons()} Birthday</th>
               <th className="text-left p-3 border-b">Age</th>
             </tr>
           </thead>
