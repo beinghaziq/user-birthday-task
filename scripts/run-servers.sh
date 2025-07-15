@@ -15,11 +15,11 @@ BACKEND_DIR="$(cd backend && pwd)"
 BACKEND_ENTRY="main:app"
 
 # Launch React server in new tab
-ttab -t "React App" bash -c "
+ttab -t "Next App" bash -c "
   cd '$FRONTEND_DIR'
   echo '📦 Installing frontend dependencies...'
   npm install
-  echo '🚀 Starting React server...'
+  echo '🚀 Starting Next server...'
   npm run dev
 "
 
@@ -30,7 +30,6 @@ ttab -t "FastAPI Server" bash -c "
   python3 -m venv venv
   source venv/bin/activate
   echo '📦 Installing backend dependencies...'
-  pip install -r requirements.txt
   echo '🚀 Starting FastAPI server...'
   uvicorn $BACKEND_ENTRY --reload
 "
