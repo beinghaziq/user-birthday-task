@@ -1,6 +1,5 @@
 # User Birthday Task
-
-This application is a migration of PingCRM from Ruby on Rails to FastAPI, React.js, and TypeScript.
+A simple application to display users and their birthdays.
 
 ## Features
 
@@ -15,8 +14,6 @@ This application is a migration of PingCRM from Ruby on Rails to FastAPI, React.
 <img width="1094" height="396" alt="Screenshot 2025-07-15 at 10 27 06 PM" src="https://github.com/user-attachments/assets/7074d6c5-f948-48c0-9d1f-68f382d13a6b" />
 
 
-## Demo
-https://ping-crm-migration.vercel.app/
 
 # Build With
 ## Backend
