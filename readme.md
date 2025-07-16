@@ -39,31 +39,18 @@ A simple application to display users and their birthdays. It has sorting based 
    ```bash
       npm install ttab
    ```
-3. **Setup ENVs**:
-   ```bash
-   bash scripts/setup-env.sh
-   ```
-4. **Setup Database and Seed**:
-   ```bash
-   bash scripts/setup-database.sh
-   ```
-5. **Run both servers**:
+3. **Run both servers**:
    ```bash
    bash scripts/run-servers.sh
    ```
 
 ## API Documentation
 
-https://ping-crm-migration.onrender.com/docs
+http://localhost:8000/docs
 
-## Deployment
-- Backend: Render
-- Frontend: Vercel
-- Database: supabase
 
 ## Features that are missing or nice to have
 - Eslint can be added
-- I have added user creation and JWT generation but it needs to be properly handled with HTTP only cookies and sessions.
 - Testing using pytest and react testing library.
 - Pre commit hook for formatting and tests
 - Loaders and notifications
