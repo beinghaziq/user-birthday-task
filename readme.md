@@ -1,14 +1,11 @@
 # User Birthday Task
-A simple application to display users and their birthdays.
+A simple application to display users and their birthdays. It has sorting based on birthdays as well.
 
 ## Features
 
-- Autentication: Jwt based authentication is added.
-- Organzation: Organizationn complete CRUD is added on backend and listing and creation on frontend.
-- Contacts: Contact complete CRUD is added on backend and listing on frontend, Accociated organization is also displayed.
-- Search: Searching on both organization and contacts is integrated.
-- Filters: Filtering on both organization and contacts data is integrated.
-- Code Formatting: Black is added for code formatting
+- Users display
+- Birthday calculation
+- Sorting based on age
 
 <img width="1072" height="342" alt="Screenshot 2025-07-15 at 10 26 49 PM" src="https://github.com/user-attachments/assets/148098e1-9ccb-4d19-b920-970087a03109" />
 <img width="1094" height="396" alt="Screenshot 2025-07-15 at 10 27 06 PM" src="https://github.com/user-attachments/assets/7074d6c5-f948-48c0-9d1f-68f382d13a6b" />
@@ -18,11 +15,9 @@ A simple application to display users and their birthdays.
 # Build With
 ## Backend
 - Framework: FastAPI
-- Database: PostgreSQL
 
 ## FrontEnd
-- Framework: ReactJS, Typescript
-- Store: RTKQuery
+- Framework: NextJS, Typescript
 
 # Getting Started
 
@@ -30,7 +25,6 @@ A simple application to display users and their birthdays.
 
 - Python3
 - node 20
-- PostgresQl 15 (Use `admin` for both user and password and create database with name: `ping_crm`)
 - npm
 - pip3
 
@@ -38,7 +32,7 @@ A simple application to display users and their birthdays.
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/beinghaziq/ping-crm-migration.git
+   git clone https://github.com/beinghaziq/user-birthday-task.git
    cd repo
    ```
 2. **Setup TTAB**:
